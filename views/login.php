@@ -13,7 +13,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/carrinho/templates/cabecalho.php";
                     <input type="password" class="bordainput meu-input" name="senha" id="senha" placeholder="Senha" required>
                 </div>
                 <button type="submit" id="buttonb">Acessar</button>
-                <p  style="margin-top: 5px;"><a href="/Carrinho/views/cadastro_usuario.php"  id="linkb">Cadastrar</a></p> 
+                <p  style="margin-top: 5px;"><a href="/carrinho/views/cadastrousuario.php"  id="linkb">Cadastrar</a></p> 
 
             </fieldset>
          </form>
