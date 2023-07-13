@@ -93,8 +93,8 @@ footer {
     text-decoration: none;
 }
   
-  /*style footer final*/
-  /* Login style começo */
+  /*FINAL style do rodapé*/
+  /* INICIO style login começo */
 
 #loginmod{
     background-color: #F9F8F8;
@@ -162,7 +162,7 @@ footer {
     translate: -50% -50%;
 }
 
-/* Login style fim */
+/* FINAL style login */
 
 #formstyle{
     background-color: #F9F8F8;
