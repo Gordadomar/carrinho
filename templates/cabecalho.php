@@ -9,7 +9,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SITE CARRINHO DE COMPRAS </title>
 
-    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="/carrinho/arq_css/style.css">
@@ -23,7 +23,7 @@ session_start();
                 <li>
                     <a href="/Carrinho/views/login.php"><span class="material-symbols-outlined">
                         person
-                        </span>Login</a>
+                        </span>LOGIN</a>
                 </li>
             </ul>
         </nav>        

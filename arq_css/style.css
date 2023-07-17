@@ -31,7 +31,7 @@ nav ul {
     list-style: none; /* especifica o estilo para uma lista como padrão*/
     margin: 0; /* define a área de margem nos quatro lados do elemento */
     padding: 0; /* é responsável por definir uma distância interna entre um elemento e sua borda */
-    background-color:#0a79b0; /* cor do menu de navegação */
+    background-color:#0C3A54; /* cor do menu de navegação */
 }
   
 nav li {
@@ -46,13 +46,20 @@ nav li a {
     color:#F9F8F8;  
 }
 nav li a:hover {
-    color: #000000;
+    color: white;
     font-weight: bold;
     font-size: large;
 }
   
   /* style cabeçalho fim */
   /* style footer início */
+
+
+
+  #body_rodape
+  {background-color: #0C3A54;text-align: center;font-size: 14px; padding: 20px; display: flex; justify-content: space-between;}
+  .color-link{color: white;}
+
 
 footer {
     position: fixed; /* mantém a posição fixa do rodapé em relação a página */
@@ -61,8 +68,12 @@ footer {
     align-items: center; /* Os itens são centralizados no eixo transversal */
     flex-wrap:wrap; /* serve para definir se os itens dentro do contêiner poderão ocupar multiplas linhas ou não. Se sim, os elementos quebradão linha quando chegar no limite do elemento pai, caso não, os elementos serão dimencionados de forma a caberem no elemento pai */
     flex-direction: row; /* permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal */
-    background-color:#0a79b0;
-    color:#F9F8F8;
+    background-color: #0C3A54;
+    text-align:center;
+    font-size: 14px; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between;
     left: 0; /* fica colado a esquerda */
     right: 0;
     width: 100%; /* tamanho do flex container */
@@ -72,6 +83,7 @@ footer {
   
 .left {
     margin-left: 10px;
+    color: white;
 }
   
 .right {
@@ -82,6 +94,7 @@ footer {
     text-align: right;
     letter-spacing: -1px; /* ajusta o espaçamento entre as letras */
     word-spacing: -1px; /* ajusta o espaçamento entre as palavras */
+    color:white;
     
 }
   
@@ -97,62 +110,73 @@ footer {
   /* INICIO style login começo */
 
 #loginmod{
-    background-color: #F9F8F8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#0C3A54 ;
     width: 30%;
     height: 360px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 8%;
+    border-radius: 5%;
     text-align:center;
-    border: none;
+    border-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    
+    color: white;
 }
 
-#h1style{
-    margin-top: 20px;
-    margin-left: 100px;
-    text-align: left;
+#loginmaior{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px;
+    text-align: center;
+    color: #F9F8F8;
 }
 
-#buttonb{
+.fontedologin{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(212, 211, 211);
+    font-size: 10px;
+    text-align: center;
+}
+
+
+#butacesse{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
     color: #F9F8F8;
-    width: 250px;
+    width: 150px;
     height: 40px;
-    border-radius: 8px;
+    border-radius: 20px;
     border: none;
 }
 
-#linkb{
+#linkcadastrese{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:small;
-    color: black;
+    color: #F9F8F8;
 }
 
 .bordainput{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0.5rem;
     width: 300px;
     height: 40px;
-    border-radius: 10px;
-    background-color: #0a79b0;
+    border-radius: 20px;
+    background-color: #0C3A54;
     color: #F9F8F8;
     border: none;
+}
+
+.bordainput:hover{
+    background-color: gray;
 }
 
 .meu-input::placeholder {
     color: #F9F8F8;
   }
 
-.fontelogin{
-    color: black;
-    font-size: 10px;
-    margin-left: 100px;
-    text-align: left;
-}
 
 .cent{
     width: 100%;
@@ -164,18 +188,47 @@ footer {
 
 /* FINAL style login */
 
-#formstyle{
-    background-color: #F9F8F8;
+#cadastrestyle{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0C3A54;
     width: 30%;
-    height: 360px;
+    height: 300px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 8%;
-    text-align:center;
+    border-radius: 25px;
+    text-align: center;
     border: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    translate: -50% -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.botao {
+    font-size: 1.2em;
+    background: white;
+    border: 0;
+    margin-bottom: 20px;
+    color: #0C3A54;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px white;
+    text-shadow: 1px 1px 1px white;
+}
+
+.botao:hover {
+    background: #23334c;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
 }
