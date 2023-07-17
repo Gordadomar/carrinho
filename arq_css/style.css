@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
-/* style cabeçalho inicio */
+body{
+font-family: 'Poppins', sans-serif;
+font-family: 'Righteous', cursive;
+}
 
+/* style cabeçalho inicio */
 nav{
     text-align: center;
 }

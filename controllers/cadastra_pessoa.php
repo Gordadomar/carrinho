@@ -39,7 +39,7 @@ function cadastrar($nome, $email, $senha) {
             $_SESSION['email'] = $email;
 
             // Redirecione para a página de perfil ou área restrita
-            header('Location: /Carrinho/index.php');
+            header('Location: /carrinho/index.php');
             exit();
         } else {
             // O email de usuário já existe

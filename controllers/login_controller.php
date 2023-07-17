@@ -35,7 +35,7 @@ function login($email, $senha) {
 
 
                 // Redirecione para a página de perfil ou área restrita
-                header('Location:/Carrinho/index.php');
+                header('Location:/carrinho/index.php');
                 exit();
             } else {
                 // Senha incorreta
