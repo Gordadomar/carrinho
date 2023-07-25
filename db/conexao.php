@@ -1,6 +1,6 @@
 <?php
 
-require_once '../configs/configdb.php';
+require_once $_SERVER["DOCUMENT_ROOT"] . '/carrinho/configs/configdb.php';
 
 class Conexao {
     public static function conectar (){

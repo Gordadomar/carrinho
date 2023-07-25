@@ -1,6 +1,6 @@
 <?php
 // Inclua o arquivo de conexão com o banco de dados
-require_once '/carrinho/db/conexao.php';
+require_once '../db/conexao.php';
 
 
 // Função para cadastrar um novo usuário
@@ -32,14 +32,14 @@ function cadastrar($nome, $email, $senha) {
             $stmt->bindValue(':senha', $hashed_senha);
             $stmt->execute();
 
-            // Cadastro bem-sucedido
-            // Inicie uma sessão e armazene as informações do usuário, se necessário
-            session_start();
-            $_SESSION['user_id'] = $conn->lastInsertId();
-            $_SESSION['email'] = $email;
+             
+                
+            setcookie('sucesso', 'Usuário cadastrado com sucesso', time() + 3600, '/');
+             
+           
 
             // Redirecione para a página de perfil ou área restrita
-            header('Location: /carrinho/index.php');
+            header('Location: /carrinho/views/login.php');
             exit();
         } else {
             // O email de usuário já existe

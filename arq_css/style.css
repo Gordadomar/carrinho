@@ -146,15 +146,6 @@ footer {
 }
 
 
-#butacesse{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
-    color: #F9F8F8;
-    width: 150px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-}
 
 #linkcadastrese{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -192,6 +183,8 @@ footer {
 
 /* FINAL style login */
 
+/*INICIO style cadastre-se*/
+
 #cadastrestyle{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #0C3A54;
@@ -214,11 +207,22 @@ footer {
     align-items: center;
 }
 
+#butacesse{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(133, 197, 226, 0.822);
+    color: #F9F8F8;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
 
 .botao {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2em;
     background: white;
-    border: 0;
+    border: none;
+    border-radius: 20px;
     margin-bottom: 20px;
     color: #0C3A54;
     padding: 0.2em 0.6em;
@@ -227,8 +231,8 @@ footer {
 }
 
 .botao:hover {
-    background: #23334c;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    background: rgba(133, 197, 226, 0.822);
+    color: white;
     text-shadow: none;
 }
 
@@ -236,3 +240,5 @@ footer {
 .botao, select{
     cursor: pointer;
 }
+
+/*FINAL STYLE CADASTRE-SE*/

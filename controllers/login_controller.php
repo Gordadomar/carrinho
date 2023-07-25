@@ -31,7 +31,7 @@ function login($email, $senha) {
                 session_start();
                 $_SESSION['user_id'] = $row['id_usuario'];
                 $_SESSION['email'] = $row['email'];
-
+                $_SESSION['nivel_acesso'] = $row['nivel_acesso'];
 
 
                 // Redirecione para a página de perfil ou área restrita
@@ -43,7 +43,7 @@ function login($email, $senha) {
             }
         } else {
             // Usuário não encontrado
-            echo "Nome de usuário não existe.";
+            setcookie('erro', 'Email ou senha incorretos', time() + 3600, '/');
         }
     } else {
         // Campos em branco
@@ -51,9 +51,6 @@ function login($email, $senha) {
     }
 }
 
-/* $stmt = $conn->prepare("SELECT email, senha FROM usuario");
-$stmt->execute();
-$row = $stmt->fetch(PDO::FETCH_ASSOC); */
 
 try {
     // Obtenha as variáveis do banco de dados
