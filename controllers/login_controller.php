@@ -44,6 +44,7 @@ function login($email, $senha) {
         } else {
             // Usuário não encontrado
             setcookie('erro', 'Email ou senha incorretos', time() + 3600, '/');
+            header('Location:/carrinho/views/login.php');
         }
     } else {
         // Campos em branco

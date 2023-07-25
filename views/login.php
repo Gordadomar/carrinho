@@ -2,6 +2,14 @@
 require_once $_SERVER["DOCUMENT_ROOT"] . "/carrinho/templates/cabecalho.php";
 ?>
 <div>
+        <?php if (isset($_COOKIE['erro'])) : ?>
+                    <p><?= $_COOKIE['erro'] ?></p>
+                    <?php setcookie('erro', '', time() - 3600, '/') ?>
+                <?php endif; ?>
+                <?php if (isset($_COOKIE['sucesso'])) : ?>
+                    <p><?= $_COOKIE['sucesso'] ?></p>
+                    <?php setcookie('sucesso', '', time() - 3600, '/') ?>
+                <?php endif; ?>
         <form action="/carrinho/controllers/login_controller.php" autocomplete="on" method="POST">
             <fieldset id="loginmod">
                 <h1 id="loginmaior">L O G I N</h1>

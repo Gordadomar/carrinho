@@ -3,7 +3,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/carrinho/templates/cabecalho.php";
 ?>
 
 <div>
-        <form action="/carrinho/controllers/produtocontroller.php" autocomplete="on" method="POST">
+        <form action="/carrinho/controllers/produtocontroller.php" autocomplete="on" method="POST" enctype="multipart/form-data">
             <fieldset id="loginmod">
                 <h1>Cadastrar Produto</h1>
                 <p class= "fontelogin" style="margin-bottom: 10px;">Insira os dados do produto nos campos abaixo.</p> 
@@ -18,7 +18,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/carrinho/templates/cabecalho.php";
                     <input type="file" name="imagem_produto" id="imagem_produto">
                 </div>
                 
-                <button type="submit" id="buttonb">Cadastrar</button> 
+                <button type="submit" id="buttonb" value="inserir" name="acao">Cadastrar</button> 
 
             </fieldset>
          </form>
