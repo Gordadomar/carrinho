@@ -58,15 +58,13 @@ nav li a:hover {
   /* style cabeçalho fim */
   /* style footer início */
 
-
-
   #body_rodape
   {background-color: #0C3A54;text-align: center;font-size: 14px; padding: 20px; display: flex; justify-content: space-between;}
-  .color-link{color: white;}
-
+  .color-link{color: white;
+}
 
 footer {
-    position: fixed; /* mantém a posição fixa do rodapé em relação a página */
+    position:absolute; /* mantém a posição fixa do rodapé em relação a página */
     justify-content: space-between;
     display: flex; /* Quando colocamos essa propriedade em um elemento, esse elemento se torna um flex container, a partir daí podemos manipular todos os elementos filhos desse flex container com propriedades novas */
     align-items: center; /* Os itens são centralizados no eixo transversal */
@@ -242,3 +240,10 @@ footer {
 }
 
 /*FINAL STYLE CADASTRE-SE*/
+
+.tamimg {
+    width: 10rem; /* Ajuste o tamanho da imagem conforme desejado */
+    height: 10rem;
+    border-radius: 50%; /* Define o raio como 50%, criando um círculo bem arredondado */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}

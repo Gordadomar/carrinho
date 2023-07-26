@@ -78,6 +78,7 @@ function excluirProduto($id_produto)
 try {
     // Verifique se o formulário foi enviado
     if ($_SERVER["REQUEST_METHOD"] === "POST" && $_POST['acao'] == 'inserir') {
+        
         // Obtenha as variáveis do formulário
         $nome_produto = $_POST["nome_produto"];
         $preco = $_POST["preco"];
