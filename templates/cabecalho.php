@@ -28,8 +28,8 @@ session_start();
                         if (isset($_SESSION['user_id'])  && $_SESSION['nivel_acesso'] == 2) :
                             // O usuário logado for nível 2, exibir botão de adicionar produto
                         ?>
-                            <li><a href="/carrinho/views/cadastroproduto.php">Adicionar Produto</a></li>
-                            <li><a href="/carrinho/views/editaproduto.php">Editar Produto</a></li>
+                            <li><a href="/carrinho/views/cadastroproduto.php">ADICIONAR PRODUTO</a></li>
+                            <li><a href="/carrinho/views/editaproduto.php">EDITAR PRODUTO</a></li>
 
                         <?php
                         endif;
@@ -44,14 +44,14 @@ session_start();
                         ?>
                             <a href="/carrinho/controllers/logout_controller.php"><span class="material-symbols-outlined">
                                     logout
-                                </span>Logout</a>
+                                </span>LOGOUT</a>
                         <?php
                         else :
                             // O usuário não está logado, exibir botão de login
                         ?>
                             <a href="/carrinho/views/login.php"><span class="material-symbols-outlined">
                                     person
-                                </span>Login</a>
+                                </span>LOGIN</a>
 
                         <?php
                         endif;
