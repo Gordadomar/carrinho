@@ -1,15 +1,26 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+padding: 0; /* Define o preenchimento (espaçamento interno) em todas as quatro direções (cima, direita, baixo e esquerda) como 0. */
+margin: 0; /* Define a margem (espaçamento externo) em todas as quatro direções (cima, direita, baixo e esquerda) como 0. */
+box-sizing: border-box; /* Define o modelo de caixa para "border-box", o que inclui a largura e a altura da borda e do preenchimento na largura total do elemento, evitando que a largura e altura definidas sejam aumentadas pelo preenchimento e borda. */
+
 }
 
+html,
 body{
-font-family: 'Poppins', sans-serif;
-font-family: 'Righteous', cursive;
+    position: relative; /* Define a posição do elemento como "relativa", o que permitirá posicionar o elemento com base em sua posição normal na página. */
+    min-height: 100vh; /* Define a altura mínima do elemento como 100% da altura da viewport (altura visível do navegador). Isso garante que o elemento tenha, pelo menos, a altura da tela, independentemente do conteúdo dentro dele. */
+    overflow: auto; /* Define o comportamento de rolagem (scroll) quando o conteúdo do elemento exceder o espaço disponível. O valor "auto" permite que a rolagem seja adicionada somente quando necessário. */
+    font-family: 'Poppins', sans-serif; /* Define a família de fontes para o elemento. Ele tentará usar a fonte "Poppins" e, se não estiver disponível, usará uma fonte genérica "sans-serif". */
+    font-family: 'Righteous', cursive; /* Substitui a definição anterior da família de fontes. Se a fonte "Righteous" estiver disponível, ela será usada para o elemento. "cursive" é um fallback genérico caso a fonte "Righteous" não esteja disponível. */
+    
 }
 
-/* style cabeçalho inicio */
+main{
+    padding-bottom: 3rem;
+}
+
+/* INICIO DO STYLE DO CABECALHO */
+
 nav{
     text-align: center;
 }
@@ -55,8 +66,53 @@ nav li a:hover {
     font-size: large;
 }
   
-  /* style cabeçalho fim */
-  /* style footer início */
+  /* FINAL DO STYLE DO CABEÇALHO */
+
+  /*INICIO DO STYLE DA TABELA DE PRODUTOS*/
+
+  .styletable {
+    width: 80%; /* Define a largura da tabela para 100% da largura disponível */
+    border-collapse: collapse; /* Remove as bordas internas entre as células */
+  }
+  
+  thead {
+    background-color: #f2f2f2; /* Cor de fundo para a linha do cabeçalho */
+  }
+  
+  th {
+    padding: 10px; /* Adicionar espaçamento interno ao redor do cabeçalho */
+    text-align: left; /* Alinhar o texto do cabeçalho à esquerda */
+    color: #333; /* Cor do texto do cabeçalho */
+    border: 1px solid #ddd; /* Borda da célula do cabeçalho */
+  }
+
+  /*style das celulas*/
+
+  td {
+    padding: 8px; /* Adicionar espaçamento interno ao redor das células do corpo */
+    text-align: left; /* Alinhar o texto das células à esquerda */
+    color: #555; /* Cor do texto das células do corpo */
+    border: 1px solid #ddd; /* Borda da célula do corpo */
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Cor de fundo para linhas pares */
+  }
+
+  #butacesse1{ /*botao da tabela*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0C3A54;
+    color: #F9F8F8;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    border: none; 
+}
+
+/*FINAL DO STYLE DA TABELA DE PRODUTOS*/
+
+
+  /* INICIO DO STYLE DO RODAPÉ */
 
   #body_rodape
   {background-color: #0C3A54;text-align: center;font-size: 14px; padding: 20px; display: flex; justify-content: space-between;}
@@ -64,23 +120,23 @@ nav li a:hover {
 }
 
 footer {
-    position:absolute; /* mantém a posição fixa do rodapé em relação a página */
+    position: absolute; 
     justify-content: space-between;
-    display: flex; /* Quando colocamos essa propriedade em um elemento, esse elemento se torna um flex container, a partir daí podemos manipular todos os elementos filhos desse flex container com propriedades novas */
-    align-items: center; /* Os itens são centralizados no eixo transversal */
-    flex-wrap:wrap; /* serve para definir se os itens dentro do contêiner poderão ocupar multiplas linhas ou não. Se sim, os elementos quebradão linha quando chegar no limite do elemento pai, caso não, os elementos serão dimencionados de forma a caberem no elemento pai */
-    flex-direction: row; /* permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal */
+    display: flex; 
+    align-items: center; 
+    flex-wrap:wrap; 
+    flex-direction: row; 
     background-color: #0C3A54;
     text-align:center;
     font-size: 14px; 
     padding: 20px; 
     display: flex; 
     justify-content: space-between;
-    left: 0; /* fica colado a esquerda */
+    left: 0; 
     right: 0;
-    width: 100%; /* tamanho do flex container */
-    height: auto; /* determina a altura da área do conteúdo de um elemento em relação ao elemento-pai do box */
-    bottom: 0; /* define a posição vertical do elemento em relação a sua borda inferior */
+    width: 100%; 
+    height: 3rem; 
+    bottom: 0; 
 }
   
 .left {
@@ -108,8 +164,10 @@ footer {
     text-decoration: none;
 }
   
-  /*FINAL style do rodapé*/
-  /* INICIO style login começo */
+  /*FINAL DO STYLE DO RODAPÉ*/
+
+
+  /* INICIO DO STYLE DO LOGIN */
 
 #loginmod{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -142,8 +200,6 @@ footer {
     font-size: 10px;
     text-align: center;
 }
-
-
 
 #linkcadastrese{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -179,9 +235,9 @@ footer {
     translate: -50% -50%;
 }
 
-/* FINAL style login */
+/* FINAL DO STYLE DO LOGIN */
 
-/*INICIO style cadastre-se*/
+/*INICIO STYLE CADASTRE-SE*/
 
 #cadastrestyle{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -241,9 +297,12 @@ footer {
 
 /*FINAL STYLE CADASTRE-SE*/
 
+/* INICIO DO STYLE DAS IMAGENS DOS PRODUTOS*/
+
 .tamimg {
     width: 8rem; /* Ajuste o tamanho da imagem conforme desejado */
     height: 8rem;
     border-radius: 50%; /* Define o raio como 50%, criando um círculo bem arredondado */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
+/* FINAL DO STYLE DAS IMAGENS DOS PRODUTOS */

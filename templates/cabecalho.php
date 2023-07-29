@@ -29,7 +29,7 @@ session_start();
                             // O usuário logado for nível 2, exibir botão de adicionar produto
                         ?>
                             <li><a href="/carrinho/views/cadastroproduto.php">ADICIONAR PRODUTO</a></li>
-                            <li><a href="/carrinho/views/editaproduto.php">EDITAR PRODUTO</a></li>
+                            <li><a href="/carrinho/views/lista_produto_adm.php">LISTA DE PRODUTOS</a></li>
 
                         <?php
                         endif;
