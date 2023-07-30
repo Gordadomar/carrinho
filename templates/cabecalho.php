@@ -15,6 +15,10 @@ session_start();
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&family=Righteous&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"/>
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="/carrinho/arq_css/bootstrap.css">
+    <!-- js bootstrap -->
+    <script src="/carrinho/js/bootstrap.bundle.js"defer></script>
     <link rel="stylesheet" href="/carrinho/arq_css/style.css">
 </head>
 <body>

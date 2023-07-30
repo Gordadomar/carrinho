@@ -48,7 +48,7 @@ $produtos = obterProdutos();
                         <form action="/carrinho/controllers/produtocontroller.php" method="POST">
                             <input type="hidden" name="id_produto" value="<?php echo $produto['id_produto']; ?>">
                             <!-- Adicione o ID do produto na URL do botão "Editar" -->
-                            <a href="/carrinho/views/editaproduto.php?id_produto=<?php echo $produto['id_produto']; ?>">
+                            <a href="/carrinho/views/editaproduto.php?id_produto=<?php echo $produto['id_produto']; ?>" class="link-sem-barra">
                                 <button type="button" id="butacesse1">Editar</button>
                             </a>
                             

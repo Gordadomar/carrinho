@@ -16,7 +16,7 @@ body{
 }
 
 main{
-    padding-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 /* INICIO DO STYLE DO CABECALHO */
@@ -73,7 +73,7 @@ nav li a:hover {
   .styletable {
     width: 80%; /* Define a largura da tabela para 100% da largura disponível */
     border-collapse: collapse; /* Remove as bordas internas entre as células */
-  }
+}
   
   thead {
     background-color: #f2f2f2; /* Cor de fundo para a linha do cabeçalho */
@@ -81,7 +81,7 @@ nav li a:hover {
   
   th {
     padding: 10px; /* Adicionar espaçamento interno ao redor do cabeçalho */
-    text-align: left; /* Alinhar o texto do cabeçalho à esquerda */
+    text-align: center; /* Alinhar o texto do cabeçalho à esquerda */
     color: #333; /* Cor do texto do cabeçalho */
     border: 1px solid #ddd; /* Borda da célula do cabeçalho */
   }
@@ -90,7 +90,7 @@ nav li a:hover {
 
   td {
     padding: 8px; /* Adicionar espaçamento interno ao redor das células do corpo */
-    text-align: left; /* Alinhar o texto das células à esquerda */
+    text-align: center; /* Alinhar o texto das células à esquerda */
     color: #555; /* Cor do texto das células do corpo */
     border: 1px solid #ddd; /* Borda da célula do corpo */
   }
@@ -99,7 +99,7 @@ nav li a:hover {
     background-color: #f9f9f9; /* Cor de fundo para linhas pares */
   }
 
-  #butacesse1{ /*botao da tabela*/
+#butacesse1{ /*botao da tabela*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #0C3A54;
     color: #F9F8F8;
@@ -109,29 +109,49 @@ nav li a:hover {
     border: none; 
 }
 
+#buttofc{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0C3A54;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    border: none; 
+}
+
+#buttoncarr{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0C3A54;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    border: none; 
+}
+
+
+
 /*FINAL DO STYLE DA TABELA DE PRODUTOS*/
 
 
   /* INICIO DO STYLE DO RODAPÉ */
 
   #body_rodape
-  {background-color: #0C3A54;text-align: center;font-size: 14px; padding: 20px; display: flex; justify-content: space-between;}
+  {
+    text-align: center;
+    font-size: 14px;
+ }
   .color-link{color: white;
 }
 
 footer {
     position: absolute; 
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex; 
     align-items: center; 
-    flex-wrap:wrap; 
+    flex-wrap: wrap; 
     flex-direction: row; 
     background-color: #0C3A54;
-    text-align:center;
-    font-size: 14px; 
-    padding: 20px; 
-    display: flex; 
-    justify-content: space-between;
     left: 0; 
     right: 0;
     width: 100%; 
@@ -306,3 +326,12 @@ footer {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 /* FINAL DO STYLE DAS IMAGENS DOS PRODUTOS */
+
+/* INICIO DO STYLE DO INDEX */
+
+.imagem-produto {
+    width: 25rem; /* Tamanho desejado para a largura */
+    height: 25rem; /* A altura será ajustada proporcionalmente à largura */
+  }
+
+/* FINAL DO STYLE DO INDEX */
