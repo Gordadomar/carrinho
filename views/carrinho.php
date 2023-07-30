@@ -43,14 +43,14 @@ function calcularTotalCarrinho()
                             <!-- Formulário para adicionar item -->
                             <form action="/carrinho/controllers/atualizarcarrinho.php" method="post">
                                 <input type="hidden" name="nome_produto" value="<?php echo $item['nome_produto']; ?>">
-                                <button type="submit" id="buttonmod" class="link-sem-barra">Adicionar</button>
+                                <button type="submit" id="buttonmod" class="link-sem-barra"  style="font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: #0C3A54; color: white; width: 110px; height: 40px; border-radius: 30px; border: none;">Adicionar</button>
                             </form>
                         </td>
                         <td>
                             <!-- Formulário para remover item -->
                             <form action="/carrinho/controllers/remove_item.php" method="post">
                                 <input type="hidden" name="nome_produto" value="<?php echo $item['nome_produto']; ?>">
-                                <button type="submit" id="buttonmod" class="link-sem-barra">Remover</button>
+                                <button type="submit" id="buttonmod" class="link-sem-barra" style="font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: #0C3A54; color: white; width: 110px; height: 40px; border-radius: 30px; border: none;">Remover</button>
                             </form>
                         </td>
                     </tr>
